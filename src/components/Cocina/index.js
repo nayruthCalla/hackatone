@@ -4,6 +4,7 @@ import OrderCard from './order-card';
 import Options from '../Options'
 import getOrders from '../../controller/orders/getOrder'
 
+const user = JSON.parse(localStorage.getItem('user'));
 const Pedidos = (props) => {
   const [orders, setOrders] = useState([]);
   const [type, setType] = useState('pending');
@@ -11,8 +12,8 @@ const Pedidos = (props) => {
   useEffect(() => {
     const interval = () => {
 
-      getOrders(localStorage.getItem('token')).then((data) => {
-        // console.log(data)
+      getOrders(localStorage.getItem('token'),user._id).then((data) => {
+        console.log(data)
         setOrders(data)
       })
 
@@ -38,7 +39,7 @@ const Pedidos = (props) => {
             </div>}
           {orders.length !== 0 &&
             orders.map(el => {
-              if ((el.status === 'pending' || el.status === 'delivering'|| el.status === 'canceled') && type === 'pending') {
+              if ((el.status === 'pending' || el.status === 'canceled') && type === 'pending') {
                 return <OrderCard order={el} key={el._id} />
               } else if (el.status === 'delivered' && type === 'delivered') {
                 return <OrderCard order={el} key={el._id} />

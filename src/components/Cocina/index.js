@@ -5,7 +5,7 @@ import Options from '../Options'
 import getOrders from '../../controller/orders/getOrder'
 
 const user = JSON.parse(localStorage.getItem('user'));
-console.log(user._id)
+// console.log(user._id)
 const Cocina = (props) => {
   const [orders, setOrders] = useState([]);
   const [type, setType] = useState('pending');
@@ -40,7 +40,7 @@ const Cocina = (props) => {
             </div>}
           {orders.length !== 0 &&
             orders.map(el => {
-              if ((el.status === 'pending' || el.status === 'delivering'|| el.status === 'canceled') && type === 'pending') {
+              if ((el.status === 'pending' || el.status === 'canceled') && type === 'pending') {
                 return <OrderCard order={el} key={el._id} />
               } else if (el.status === 'delivered' && type === 'delivered') {
                 return <OrderCard order={el} key={el._id} />

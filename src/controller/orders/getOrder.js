@@ -1,10 +1,11 @@
-const getOrders = (token) => {
-  return fetch('http://165.22.166.131:4000/orders', {
+const getOrders = (token, consultoraId) => {
+  return fetch('http://165.22..131:4000/list/:consultantid', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + token
-    }
+    },
+    params: consultoraId
   }).then((resp) => {
     if (resp.status === 200) {
       return resp.json()

@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/nayruthCalla/hackatone/static/css/main.48bd904f.chunk.css",
+    "main.js": "/nayruthCalla/hackatone/static/js/main.492a1448.chunk.js",
+    "main.js.map": "/nayruthCalla/hackatone/static/js/main.492a1448.chunk.js.map",
+    "runtime~main.js": "/nayruthCalla/hackatone/static/js/runtime~main.70b2a5f1.js",
+    "runtime~main.js.map": "/nayruthCalla/hackatone/static/js/runtime~main.70b2a5f1.js.map",
+    "static/js/2.2823ffe9.chunk.js": "/nayruthCalla/hackatone/static/js/2.2823ffe9.chunk.js",
+    "static/js/2.2823ffe9.chunk.js.map": "/nayruthCalla/hackatone/static/js/2.2823ffe9.chunk.js.map",
+    "index.html": "/nayruthCalla/hackatone/index.html",
+    "precache-manifest.f092199588e5871003ee15b7f61e962b.js": "/nayruthCalla/hackatone/precache-manifest.f092199588e5871003ee15b7f61e962b.js",
+    "service-worker.js": "/nayruthCalla/hackatone/service-worker.js",
+    "static/css/main.48bd904f.chunk.css.map": "/nayruthCalla/hackatone/static/css/main.48bd904f.chunk.css.map",
+    "static/media/App.css": "/nayruthCalla/hackatone/static/media/bq.505ee41b.jpg",
+    "static/media/catalogo.pdf": "/nayruthCalla/hackatone/static/media/catalogo.b148b6b7.pdf",
+    "static/media/chef.png": "/nayruthCalla/hackatone/static/media/chef.953e3ce9.png",
+    "static/media/hamburger.png": "/nayruthCalla/hackatone/static/media/hamburger.b072de2a.png",
+    "static/media/waitress.png": "/nayruthCalla/hackatone/static/media/waitress.c07b0a75.png"
+  }
+}

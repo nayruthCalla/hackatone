@@ -8,7 +8,7 @@ const Login = (props) => {
 
   return (
     <>
-      <main data-testid="login" class='container d-flex fill-available justify-content-center align-items-center'>
+      <main data-testid="login" className='container d-flex fill-available justify-content-center align-items-center'>
        
         <div
           className="col-lg-6 py-3 d-flex align-items-center form-style flex-column">

@@ -5,8 +5,7 @@ import Options from '../Options'
 import getOrders from '../../controller/orders/getOrder'
 
 const user = JSON.parse(localStorage.getItem('user'));
-// console.log(user._id)
-const Cocina = (props) => {
+const Pedidos = (props) => {
   const [orders, setOrders] = useState([]);
   const [type, setType] = useState('pending');
 
@@ -62,4 +61,4 @@ const Cocina = (props) => {
     </div>
   )
 }
-export default Cocina
+export default Pedidos

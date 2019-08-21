@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Inputs from '../Inputs'
-// import getToken from '../../controller/login';
+import getToken from '../../controller/Login';
+import { Link } from 'react-router-dom';
 // import getUser from '../../controller/users/get-user-id';
 // import auth from '../../controller/routes/auth';
 
@@ -11,24 +12,17 @@ const Form = ({ logprop }) => {
 
   return (
     <form 
-    // onSubmit={async e => {
-    //   e.preventDefault()
-
-    //   await getToken(email, password).then((res) => {
-    //     // if (res.token) {
-    //     localStorage.setItem('token', res.token)
-    //     // console.log(res.token)
-    //     // }
-    //   }).catch((err) => {
-    //     setErr(err.message)
-    //   });
-
-    //   getUser(email).then((data) => {
-    //     localStorage.setItem('user', JSON.stringify(data));
-    //     auth.login(() => { logprop.history.push("/home") })
-    //   }).catch(console.error)
-    // }}
-      className="col-12 flex-column d-flex form-group">
+    onSubmit={async e => {
+      e.preventDefault()
+      console.log(e, email, password);
+      await getToken(email, password).then((res) => {
+        localStorage.setItem('token', res.token)
+        console.log(res.token)
+      }).catch((err) => {
+        setErr(err.message)
+      });
+    }}
+     >
 
       <Inputs
         divInput="input-group form-group radius-50 white"
@@ -51,8 +45,11 @@ const Form = ({ logprop }) => {
         classValue='passwordValue form-control border-none radius-50'
         visibility="input-group-append border-none radius-50"
       />
-      <button data-testid='login' type="submit" className='btn btn-color'>Ingresar</button>
-      {err && <p data-testid="errMsg" className='pt-3 text-danger'>*{err}</p>}
+      
+
+      <button type="submit" >Ingresar</button>
+      
+      {err && <p>*{err}</p>}
     </form>
   )
 }

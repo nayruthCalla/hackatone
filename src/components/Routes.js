@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {SomosBelcorp} from './Belcorp/Index'
 import {Login} from './Login/Index'
-import {Home} from './Home/View'
+import {Home} from './Home/Index'
 import {Catalogue} from './Catalogue/Index'
 import {ListOrders} from './Orders/View'
 

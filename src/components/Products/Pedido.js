@@ -11,7 +11,7 @@ const Pedido = ({ items, remove, increase, decrease, postOrder }) => {
           <th className='col-12'><h3>Pedido</h3></th>
         </tr>
         <tr className='d-flex width-100 text-align background-gray align-items-center my-2'>
-          <th className='col-4 my-1'>Nombre</th>
+          <th className='col-4 my-1'>Producto</th>
           <th className='col-4 my-1'>Cantidad</th>
           <th className='col-4 my-1'>Precio</th>
         </tr>
@@ -22,9 +22,9 @@ const Pedido = ({ items, remove, increase, decrease, postOrder }) => {
         ))}
         <tr className=' d-flex width-100 text-align background-gray align-items-center border-top'>
           <td className='col-4 my-1'>Total:</td>
-          <td className='col-4 my-1 blue-color'>S/. {total.total}</td>
+          <td className='col-4 my-1'>S/. {total.total}</td>
           <td className='col-4 my-1'>
-            <button data-testid="post-order" onClick={postOrder} className=' btn btn-primary background-blue white-space padding-10'>Confirmar Pedido</button>
+            <button  onClick={postOrder} className=' btn btn-primary background-blue white-space padding-10'>Confirmar Pedido</button>
           </td>
         </tr>
       </tbody>

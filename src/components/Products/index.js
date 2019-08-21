@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../Header';
-import Clientname from './Cliente';
+// import Clientname from './Cliente';
 import Products from './Products';
 import Pedido from './Pedido'
 import MenuOpts from '../Options';
 import postOrders from '../../controller/orders/orders'
 import ctrl from '../../controller/products';
 import { Catalogue } from './Catalogue';
+import { Slider } from './Slideshow';
 
 const Home = (props) => {
   const [name, setName] = useState('');
@@ -43,20 +44,27 @@ const Home = (props) => {
       })
   }, [])
 
-  console.log(prodData)
+  
+  const handlerSetEsika = () => {
+    setType('ESIKA')
+  }
 
+  const handlerSetCyzone = () => {
+    setType('CYZONE')
+  }
+  
   return (
     <>
-      <Header logoutprop={props} />
+      <Header logoutprop={props} handlerE={handlerSetEsika} handlerC={handlerSetCyzone} />
       <main id="menu" className="container-fluid d-flex flex-wrap align-content-around">
-        <Clientname name={name} updateName={updateName} show={show} setShow={setShow} />
+        {/* <Clientname name={name} updateName={updateName} show={show} setShow={setShow} /> */}
         <section className="row">
         {/* <Catalogue /> */}
           <div className="col-md-6">
-            <ul className="nav nav-tabs w-100" role="tablist">
-              <MenuOpts click={() => setType('ESIKA')} options="ESIKA" aClass="nav-link active" />
-              <MenuOpts click={() => setType('CYZONE')} options="CYZONE" aClass="nav-link" />
-            </ul>
+            <Slider />
+            {/* <ul className="nav nav-tabs w-100" role="tablist">
+             
+            </ul> */}
             <div data-testid='opt' className="card-columns">
               {type === 'ESIKA' && (
                 <Products  data={prodData} brand="ESIKA" add={increase} />

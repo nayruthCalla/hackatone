@@ -1,13 +1,13 @@
 import React from 'react';
-import Routes from './Routes'
 import '../css/App.css';
+import Routes from './Router'
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Routes />
-    </div>
-  );
+      <div className="container-fluid d-flex col-12 fill-available body-color align-items-center column">
+        <Routes />
+      </div>
+  )
 }
 
 export default App;

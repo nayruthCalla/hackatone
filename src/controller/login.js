@@ -1,6 +1,6 @@
 const getToken = (email, password) => {
 
-  return fetch('http://165.22.166.131:8080/auth', {
+  return fetch('http://165.22.166.131:4000/auth', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

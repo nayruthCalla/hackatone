@@ -12,7 +12,7 @@ const Header = ({ logoutprop, handlerE, handlerC }) => {
   
   return (
     <HeaderSection data-testid="header" className="width-100 mt-2 mb-4 d-flex height-60">
-      <ul className="width-100 nav  justify-content-center">
+      <ul className="width-100 nav ">
         <li className="nav-item">
           <button onClick={() => { auth.login(() => { logoutprop.history.push("/home") }) }} className="text-center align-self-start mb-4 border-none transparent cursor">
             <img src={Atras} alt="img" className="img-fluid max-50" />

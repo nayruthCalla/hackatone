@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+.container-login {
+  width: 100%;  
+  background-image: url('../images/bq.jpg');   
+  background-repeat: no-repeat;
+}
+
 .container {
   flex-direction: row;
 }
@@ -81,7 +87,7 @@
 }
 
 .card-footer-btn {
-  background-color: #758da5;
+  /* background-color: #758da5; */
   color: white;
 }
 
@@ -141,8 +147,12 @@
 .container-menu {
   position: relative;
   text-align: center;
-  color: white;
+  color: black;
   cursor: pointer;
+  border: 1px solid black;
+  width: 600px;
+  margin : 10px;
+  margin-left: 30%;
 }
 
 .filter-img:hover {
@@ -154,10 +164,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-weight: bolder;
+  color: black;
+  font-weight: museo sans;
   font-size: 2em;
-  text-shadow: 2px 2px #6c757d
+  /* text-shadow: 2px 2px #6c757d */
 } 
 
 .width-18 {
@@ -183,6 +193,7 @@
   font-weight: bolder;
   /* border-radius: 20px; */
   margin-top: 15px;
+  float: right;
 }
 
 /* .btn-color:hover {
@@ -226,6 +237,27 @@
 .text-align-left {
   text-align: left;
 }
+
+/*clases*/
+.padding-login{
+  padding: 0%;
+}
+.opacyty-login{
+ background: rgba(32, 5, 19, 0.514);
+ height: 15rem;
+ align-content: center;
+ padding-top: 4%;
+}
+.opacyty-login-top{
+  margin-top: 10%;
+ }
+ .border-login{
+  border: 1px solid rgba(201, 187, 187, 0.527);
+  padding: 2%;
+ }
+
+
+/*clases*/
 
 @media (min-width: 570px) {
   .container-menu {

@@ -4,7 +4,7 @@ import OrderCard from './order-card';
 import Options from '../Options'
 import getOrders from '../../controller/orders/getOrder'
 
-const Cocina = (props) => {
+const Pedidos = (props) => {
   const [orders, setOrders] = useState([]);
   const [type, setType] = useState('pending');
 
@@ -60,4 +60,4 @@ const Cocina = (props) => {
     </div>
   )
 }
-export default Cocina
+export default Pedidos

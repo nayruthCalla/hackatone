@@ -23,6 +23,7 @@ const Form = ({ logprop }) => {
       });
 
       getUser(email).then((data) => {
+        console.log(data)
         localStorage.setItem('user', JSON.stringify(data));
         auth.login(() => { logprop.history.push("/home") })
       }).catch(console.error)
@@ -35,8 +36,7 @@ const Form = ({ logprop }) => {
         value={email}
         label='Email'
         update={(e) => setEmail(e.target.value)}
-        placeholder='Email'
-        icon='fas fa-user'
+        placeholder='Email'        
         classValue='emailValue form-control border-none radius-50'
         visibility="input-group-append border-none radius-50" />
       <Inputs
@@ -45,8 +45,7 @@ const Form = ({ logprop }) => {
         value={password}
         label='Password'
         update={(e) => setPassword(e.target.value)}
-        placeholder='Password'
-        icon='fas fa-lock'
+        placeholder='Password'        
         classValue='passwordValue form-control border-none radius-50'
         visibility="input-group-append border-none radius-50"
       />

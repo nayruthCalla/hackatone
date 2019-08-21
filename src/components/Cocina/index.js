@@ -4,6 +4,8 @@ import OrderCard from './order-card';
 import Options from '../Options'
 import getOrders from '../../controller/orders/getOrder'
 
+const user = JSON.parse(localStorage.getItem('user'));
+// console.log(user._id)
 const Cocina = (props) => {
   const [orders, setOrders] = useState([]);
   const [type, setType] = useState('pending');
@@ -11,8 +13,8 @@ const Cocina = (props) => {
   useEffect(() => {
     const interval = () => {
 
-      getOrders(localStorage.getItem('token')).then((data) => {
-        // console.log(data)
+      getOrders(localStorage.getItem('token'),user._id).then((data) => {
+        console.log(data)
         setOrders(data)
       })
 

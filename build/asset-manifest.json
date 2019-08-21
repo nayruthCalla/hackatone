@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/hackatone/static/css/main.c418f258.chunk.css",
+    "main.js": "/hackatone/static/js/main.7791266a.chunk.js",
+    "main.js.map": "/hackatone/static/js/main.7791266a.chunk.js.map",
+    "runtime~main.js": "/hackatone/static/js/runtime~main.1e15a08c.js",
+    "runtime~main.js.map": "/hackatone/static/js/runtime~main.1e15a08c.js.map",
+    "static/js/2.2823ffe9.chunk.js": "/hackatone/static/js/2.2823ffe9.chunk.js",
+    "static/js/2.2823ffe9.chunk.js.map": "/hackatone/static/js/2.2823ffe9.chunk.js.map",
+    "index.html": "/hackatone/index.html",
+    "precache-manifest.869a61cf448d13dc7fa51c340d381380.js": "/hackatone/precache-manifest.869a61cf448d13dc7fa51c340d381380.js",
+    "service-worker.js": "/hackatone/service-worker.js",
+    "static/css/main.c418f258.chunk.css.map": "/hackatone/static/css/main.c418f258.chunk.css.map",
+    "static/media/App.css": "/hackatone/static/media/bq.505ee41b.jpg",
+    "static/media/catalogo.pdf": "/hackatone/static/media/catalogo.b148b6b7.pdf",
+    "static/media/chef.png": "/hackatone/static/media/chef.953e3ce9.png",
+    "static/media/hamburger.png": "/hackatone/static/media/hamburger.b072de2a.png",
+    "static/media/waitress.png": "/hackatone/static/media/waitress.c07b0a75.png"
+  }
+}
